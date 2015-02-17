@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
     <link rel="shortcut icon" href="//markdowntutorial.com/favicon.ico" type="image/x-icon">
 
@@ -18,28 +18,24 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <ul class="nav">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
           <li><a class="nav-link icon-github" href="//github.com/gjtorikian/markdown-tutorial" data-toggle="tooltip" data-original-title="Get the source code to this website"></a></li>
-          <li><a class="nav-link icon-home" href="//markdowntutorial.com" data-toggle="tooltip" data-original-title="Return to the start"></a></li>
+
         </ul>
-        <div class="container">
-          <div class="row">
-            <ul id="progress-bar" class="center-nav nav">
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/1" data-toggle="tooltip" data-original-title="Italics and Bold"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/2" data-toggle="tooltip" data-original-title="Headers"></a></li>
-              <li><a class="lesson icon-circle" href="//markdowntutorial.com/lesson/3" data-toggle="tooltip" data-original-title="Links"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/4" data-toggle="tooltip" data-original-title="Images"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/5" data-toggle="tooltip" data-original-title="Blockquotes"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/6" data-toggle="tooltip" data-original-title="Lists"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/7" data-toggle="tooltip" data-original-title="Paragraphs"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/conclusion" data-toggle="tooltip" data-original-title="Conclusion"></a></li>
-            </ul>
-          </div>
-        </div>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/1" data-toggle="tooltip" data-original-title="Italics and Bold"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/2" data-toggle="tooltip" data-original-title="Headers"></a></li>
+          <li><a class="lesson icon-circle" href="//markdowntutorial.com/lesson/3" data-toggle="tooltip" data-original-title="Links"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/4" data-toggle="tooltip" data-original-title="Images"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/5" data-toggle="tooltip" data-original-title="Blockquotes"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/6" data-toggle="tooltip" data-original-title="Lists"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/7" data-toggle="tooltip" data-original-title="Paragraphs"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/conclusion" data-toggle="tooltip" data-original-title="Conclusion"></a></li>
+        </ul>
       </div>
-    </div><!-- /.navbar -->
+    </nav><!-- /.navbar -->
 
     <div class="container">
       <div id="heroku-alert" class="alert alert-info" style="display:none">
@@ -47,7 +43,8 @@
       </div>
       <hr>
 
-        <p>We'll now learn how to make links to other web sites on the world wide web.</p>
+        <div class="row">
+<p>We'll now learn how to make links to other web sites on the world wide web.</p>
 
 <p>There are two different link types in Markdown, but both of them render the exact
   same way. The first link style is called an <em>inline link</em>. To create an inline
@@ -56,38 +53,41 @@
   that says, Visit GitHub!, you'd write this in Markdown: <code>[Visit GitHub!](www.github.com)</code>.</p>
 
 <p>In the box below, make a link to www.google.com, with link text that says "Search for it."</p>
-<div class="row">
-  <div class="span5 scratchpad"></div>
+  <div class="col-md-5 scratchpad"></div>
   <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"></span>
-  <div class="span5 renderpad"></div>
+  <div class="col-md-5 renderpad"></div>
 </div>
+<button class="btn btn-default btn-skip">Skip</button>
 
 <div class="toBeRevealed">
+  <div class="row">
   <hr>
   <p>Nice work!</p>
   <p>You can add emphasis to link texts, if you like. In the box below, make the
   phrase "really, really" bold, and have the entire sentence link to www.dailykitten.com.
   You'll want to make sure that the bold phrasing occurs within the link text brackets.</p>
-  <div class="row">
-    <div class="span5 scratchpad"></div>
-    <div class="span5 renderpad"></div>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
   </div>
+  <button class="btn btn-default btn-skip">Skip</button>
 </div>
 
 <div class="toBeRevealed">
+  <div class="row">
   <hr>
   <p>Fantastic!</p>
   <p>Although it might make for an awkward experience, you can make links within
   headings, too.</p>
   <p>For this next tutorial, make the text a heading four, and turn the phrase
   "the BBC" into a link to www.bbc.com/news:</p>
-  <div class="row">
-    <div class="span5 scratchpad"></div>
-    <div class="span5 renderpad"></div>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
   </div>
+  <button class="btn btn-default btn-skip">Skip</button>
 </div>
 
 <div class="toBeRevealed">
+  <div class="row">
   <hr>
   <p>That's all there is to writing inline links.</p>
   <p>The other link type is called a <em>reference</em> link. As the name implies,
@@ -112,16 +112,16 @@
   <p>In the box below, we've started writing out some reference links. You'll
     need to finish them up! Call the first reference tag "a fun place", and make
     it link to www.zombo.com; make the second link out to www.stumbleupon.com.</p>
-  <div class="row">
-    <div class="span5 scratchpad"></div>
-    <div class="span5 renderpad"></div>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
   </div>
+  <button class="btn btn-default btn-skip">Skip</button>
 </div>
 
 <div class="toBeRevealed">
   <hr>
   <p>You now know how to make links in Markdown!</p>
-  <a class="btn btn-large btn-success" href="//markdowntutorial.com/lesson/4">On to the next lesson!</a>
+  <a class="btn btn-lg btn-success" href="//markdowntutorial.com/lesson/4">On to the next lesson!</a>
 </div>
 
 
@@ -135,7 +135,7 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script>
       // TODO: If possible, we should make this change to "development" where
       // appropriate.

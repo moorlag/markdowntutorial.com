@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
     <link rel="shortcut icon" href="//markdowntutorial.com/favicon.ico" type="image/x-icon">
 
@@ -18,28 +18,24 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <ul class="nav">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <ul class="nav navbar-nav">
           <li><a class="nav-link icon-github" href="//github.com/gjtorikian/markdown-tutorial" data-toggle="tooltip" data-original-title="Get the source code to this website"></a></li>
-          <li><a class="nav-link icon-home" href="//markdowntutorial.com" data-toggle="tooltip" data-original-title="Return to the start"></a></li>
+
         </ul>
-        <div class="container">
-          <div class="row">
-            <ul id="progress-bar" class="center-nav nav">
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/1" data-toggle="tooltip" data-original-title="Italics and Bold"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/2" data-toggle="tooltip" data-original-title="Headers"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/3" data-toggle="tooltip" data-original-title="Links"></a></li>
-              <li><a class="lesson icon-circle" href="//markdowntutorial.com/lesson/4" data-toggle="tooltip" data-original-title="Images"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/5" data-toggle="tooltip" data-original-title="Blockquotes"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/6" data-toggle="tooltip" data-original-title="Lists"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/7" data-toggle="tooltip" data-original-title="Paragraphs"></a></li>
-              <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/conclusion" data-toggle="tooltip" data-original-title="Conclusion"></a></li>
-            </ul>
-          </div>
-        </div>
+        <ul id="progress-bar" class="nav navbar-nav navbar-right">
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/1" data-toggle="tooltip" data-original-title="Italics and Bold"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/2" data-toggle="tooltip" data-original-title="Headers"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/3" data-toggle="tooltip" data-original-title="Links"></a></li>
+          <li><a class="lesson icon-circle" href="//markdowntutorial.com/lesson/4" data-toggle="tooltip" data-original-title="Images"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/5" data-toggle="tooltip" data-original-title="Blockquotes"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/6" data-toggle="tooltip" data-original-title="Lists"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/lesson/7" data-toggle="tooltip" data-original-title="Paragraphs"></a></li>
+          <li><a class="lesson icon-circle-blank" href="//markdowntutorial.com/conclusion" data-toggle="tooltip" data-original-title="Conclusion"></a></li>
+        </ul>
       </div>
-    </div><!-- /.navbar -->
+    </nav><!-- /.navbar -->
 
     <div class="container">
       <div id="heroku-alert" class="alert alert-info" style="display:none">
@@ -47,7 +43,8 @@
       </div>
       <hr>
 
-        <p>If you know how to create links in Markdown, you can create images, too. The
+        <div class="row">
+<p>If you know how to create links in Markdown, you can create images, too. The
   syntax is nearly the same.</p>
 <p>The difference is that an image
 is prefaced with an exclamation point ( <code>!</code> ), followed by the same two brackets,
@@ -59,13 +56,14 @@ image for the visually impaired.</p>
 
 <p>In the box below, turn the link to an image, and fill out the alt text brackets
    to say "A representation of Octdrey Catburn":</p>
-<div class="row">
-  <div class="span5 scratchpad"></div>
+  <div class="col-md-5 scratchpad"></div>
   <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"></span>
-  <div class="span5 renderpad"></div>
+  <div class="col-md-5 renderpad"></div>
 </div>
+<button class="btn btn-default btn-skip">Skip</button>
 
 <div class="toBeRevealed">
+  <div class="row">
   <hr>
   <p>Wonderful!</p>
   <p>You don't <em>need</em> to add alt text, but it's considered useful and polite
@@ -78,16 +76,16 @@ image for the visually impaired.</p>
     need to complete them, just like the last lesson. Call the first reference tag "First Father", and make
     it link to http://octodex.github.com/images/founding-father.jpg; make the
     second image link out to http://octodex.github.com/images/foundingfather_v2.png.</p>
-  <div class="row">
-    <div class="span5 scratchpad"></div>
-    <div class="span5 renderpad"></div>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
   </div>
+  <button class="btn btn-default btn-skip">Skip</button>
 </div>
 
 <div class="toBeRevealed">
   <hr>
   <p>Ta da! You've learned all there is to adding images in Markdown!</p>
-  <a class="btn btn-large btn-success" href="//markdowntutorial.com/lesson/5">On to the next lesson!</a>
+  <a class="btn btn-lg btn-success" href="//markdowntutorial.com/lesson/5">On to the next lesson!</a>
 </div>
 
 
@@ -101,7 +99,7 @@ image for the visually impaired.</p>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script>
       // TODO: If possible, we should make this change to "development" where
       // appropriate.

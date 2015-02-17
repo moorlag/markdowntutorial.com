@@ -80,8 +80,11 @@
     $(".toBeRevealed").each(function(idx, el) {
       return $(this).data("step", idx);
     });
-    return $(".scratchpad").each(function(idx, el) {
+    $(".scratchpad").each(function(idx, el) {
       return setupAce(lessonNumber, idx, el);
+    });
+    return $(".btn-skip").click(function() {
+      return showNextSection(this);
     });
   });
 
