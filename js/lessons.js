@@ -50,11 +50,11 @@
   };
 
   showNextSection = function(currentPad) {
-    var currStepId, nextSection, nextStepId, _ref;
+    var currStepId, nextSection, nextStepId, ref;
     nextSection = $(".toBeRevealed").first();
     if ((nextSection != null)) {
       nextStepId = nextSection.data("step");
-      currStepId = (_ref = $(currentPad).closest(".displayed").data("step")) != null ? _ref : -1;
+      currStepId = (ref = $(currentPad).closest(".displayed").data("step")) != null ? ref : -1;
       if (currStepId + 1 !== nextStepId) {
         return;
       }
