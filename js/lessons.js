@@ -37,7 +37,9 @@
         if (environment === "development") {
           console.log("Did it for " + pos);
         }
-        return showNextSection(el);
+        return setTimeout((function() {
+          return showNextSection(el);
+        }), 500);
       }
     });
   };
