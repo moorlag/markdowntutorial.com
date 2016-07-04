@@ -29,7 +29,7 @@
       previewMd(pos, editor);
       $('.renderpad a').each(function(idx, el) {
         var href;
-        href = $(el).attr('href').match(/www\..+/);
+        href = $(el).attr('href').replace(/https?:\/\//, '');
         href = "http://" + href;
         return $(el).attr('href', href);
       });
