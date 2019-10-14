@@ -5,7 +5,7 @@
     <!-- TODO: Don't hard code the conclusion as page 8 -->
     <title>
       Markdown Tutorial | Lesson
-      3
+      4
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
@@ -70,31 +70,31 @@
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/1"
+              href="/fr/lesson/1"
               data-toggle="tooltip"
-              data-original-title="Italics and Bold"
+              data-original-title="Italiques et Gras"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/2"
+              href="/fr/lesson/2"
               data-toggle="tooltip"
-              data-original-title="Headers"
+              data-original-title="Titres"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/fr/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="Liens"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle"
-              href="/lesson/3"
-              data-toggle="tooltip"
-              data-original-title="Links"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/4"
+              href="/fr/lesson/4"
               data-toggle="tooltip"
               data-original-title="Images"
             ></a>
@@ -102,31 +102,31 @@
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/5"
+              href="/fr/lesson/5"
               data-toggle="tooltip"
-              data-original-title="Blockquotes"
+              data-original-title="Citations"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/6"
+              href=""
               data-toggle="tooltip"
-              data-original-title="Lists"
+              data-original-title=""
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/7"
+              href="/fr/lesson/7"
               data-toggle="tooltip"
-              data-original-title="Paragraphs"
+              data-original-title="Paragraphes"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/conclusion"
+              href="/fr/conclusion"
               data-toggle="tooltip"
               data-original-title="Conclusion"
             ></a>
@@ -152,88 +152,55 @@
         instead.
       </div>
       <div class="row">
-        <h1 class="title">Links</h1>
+        <h1 class="title">Images</h1>
       </div>
 
       <div class="row">
-<p>We'll now learn how to make links to other web sites on the world wide web.</p>
+<p>Si vous savez comment créer des liens dans Markdown, vous pouvez aussi créer des images. Le
+  la syntaxe est presque la même.</p>
 
-<p>There are two different link types in Markdown, but both of them render the exact
-  same way. The first link style is called an <em>inline link</em>. To create an inline
-  link, you wrap the link text in brackets ( <code>[ ]</code> ), and then you wrap the link
-  in parenthesis ( <code>( )</code> ). For example, to create a hyperlink to www.github.com, with a link text
-  that says, Visit GitHub!, you'd write this in Markdown: <code>[Visit GitHub!](www.github.com)</code>.</p>
+<p>Les images ont aussi deux styles, tout comme les liens, les deux image ont exactement le même rendu. La différence entre les liens et les images est que les images
+  sont précédés d'un point d'exclamation ( <code>!</code> ).</p>
 
-<p>In the box below, make a link to www.google.com, with link text that says "Search for it."</p>
+<p>Le premier style d'image s'appelle un lien <em>d'image dans la ligne (inline image link) </em>. Pour créer un fichier en ligne
+  entrez un point d'exclamation ( <code>!</code> ), enveloppez le texte alt entre parenthèses ( <code>[ ]</code> ), puis enveloppez le lien
+  entre parenthèses ( <code>( )</code>) ). (Le texte alternatif est une expression ou une phrase qui décrit l'attribut
+  pour les malvoyants).</p>
+
+<p>Par exemple, pour créer un lien image en ligne vers https://octodex.github.com/images/bannekat.png, avec un texte alt
+  qui dit, Benjamin Bannekat, que vous ecrirez ça en Markdown : <code> ![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png)</code>.</p>
+
+<p>Dans la case ci-dessous, dirigez le lien vers une image, et remplissez les crochets de texte alt.
+   pour dire "Un joli tigre" :</p>
   <div class="col-md-5 scratchpad"></div>
-  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"></span>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Tapez vos réponses dans la case de gauche, et le Markdown formaté apparaît dans la case de droite. Dès votre réponse est correcte, vous serez guidé à la prochaine leçon"></span>
   <div class="col-md-5 renderpad"></div>
 </div>
-<button class="btn btn-default btn-skip">Skip</button>
+<button class="btn btn-default btn-skip">Passer</button>
 
 <div class="toBeRevealed">
   <div class="row">
   <hr>
-  <p>Nice work!</p>
-  <p>You can add emphasis to link texts, if you like. In the box below, make the
-  phrase "really, really" bold, and have the entire sentence link to www.dailykitten.com.
-  You'll want to make sure that the bold phrasing occurs within the link text brackets.</p>
+  <p>Merveilleux !</p>
+  <p>Bien que vous n'ayez pas <em>besoin</em> d'ajouter du texte alt, cela rendra votre contenu plus accessible à votre public,
+    y compris les personnes ayant une déficience visuelle, qui utilisent des lecteurs d'écran ou qui n'ont pas de connexion Internet haute vitesse.</p>
+  <p>Pour une image de référence, vous suivrez le même modèle qu'un lien de référence.
+    Vous précéderez le markdown d'un point d'exclamation, puis fournissez deux crochets
+    pour le texte alt, puis deux autres pour la balise image, comme ceci : <code>[Le père fondateur][Pere]</code> Au bas de votre démarque
+    vous définirez une image pour la balise, comme ceci : <code>[Pere] : http://octodex.github.com/images/founding-father.jpg</code>.</p>
+  <p>Dans la boîte ci-dessous, nous avons commencé à placer quelques images de référence ; vous allez
+    doivent les compléter, tout comme la dernière leçon. Appeler la première étiquette de référence "Noir", et construisez lui un lien vers <code>https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg</code> ; créez le
+    second lien image vers <code>http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png</code>.</p>
     <div class="col-md-5 scratchpad"></div>
     <div class="col-md-5 renderpad"></div>
   </div>
-  <button class="btn btn-default btn-skip">Skip</button>
-</div>
-
-<div class="toBeRevealed">
-  <div class="row">
-  <hr>
-  <p>Fantastic!</p>
-  <p>Although it might make for an awkward experience, you can make links within
-  headings, too.</p>
-  <p>For this next tutorial, make the text a heading four, and turn the phrase
-  "the BBC" into a link to www.bbc.com/news:</p>
-    <div class="col-md-5 scratchpad"></div>
-    <div class="col-md-5 renderpad"></div>
-  </div>
-  <button class="btn btn-default btn-skip">Skip</button>
-</div>
-
-<div class="toBeRevealed">
-  <div class="row">
-  <hr>
-  <p>That's all there is to writing inline links.</p>
-  <p>The other link type is called a <em>reference</em> link. As the name implies,
-    the link is actually a reference to another place in the document. Here's an example of what
-    we mean:</p>
-  <pre>
-     Here's [a link to something else][another place].
-     Here's [yet another link][another-link].
-     And now back to [the first link][another place].
-
-     [another place]: www.github.com
-     [another-link]: www.google.com
-  </pre>
-  <p>The "references" above are the second set of brackets: <code>[another place]</code> and
-    <code>[another-link]</code>. At the bottom of a Markdown document, these brackets are defined
-    as proper links to outside websites. An advantage of the reference link style
-    is that multiple links to the same place only need to be updated once. For
-    example, if we decide to make all of the <code>[another place]</code> links go somewhere
-    else, we only have to change the single reference link.</p>
-  <p>Reference links don't appear in the rendered Markdown. You define them by providing
-    the same tag name wrapped in brackets, followed by a colon, followed by the link.</p>
-  <p>In the box below, we've started writing out some reference links. You'll
-    need to finish them up! Call the first reference tag "a fun place", and make
-    it link to www.zombo.com; make the second link out to www.stumbleupon.com.</p>
-    <div class="col-md-5 scratchpad"></div>
-    <div class="col-md-5 renderpad"></div>
-  </div>
-  <button class="btn btn-default btn-skip">Skip</button>
+  <button class="btn btn-default btn-skip">Passer</button>
 </div>
 
 <div class="toBeRevealed">
   <hr>
-  <p>You now know how to make links in Markdown!</p>
-  <a class="btn btn-lg btn-success" href="/lesson/4">On to the next lesson!</a>
+  <p>Ta da! Vous avez appris tout ce qu'il y a pour ajouter des images avec Markdown !</p>
+  <a class="btn btn-lg btn-success" href="/fr/lesson/5">A la prochaine leçon !</a>
 </div>
 
 
@@ -253,5 +220,7 @@
     </script>
 
     <script type="text/javascript" src="https://www.markdowntutorial.com/assets/main-27a2c02175dd9e3cc55614769dbb45616e2e6f623b55e3e1195b7d2dbc99ec61.js"></script> 
+    <script src="/fr/lesson_plans.js"></script>
+    
   </body>
 </html>
