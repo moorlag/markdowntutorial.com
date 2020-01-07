@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <!-- TODO: Don't hard code the conclusion as page 8 -->
     <title>
-      Markdown Tutorial
+      Markdown Tutorial | Lesson
+      4
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
@@ -79,65 +80,65 @@
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/1"
+              href="/kr/lesson/1"
               data-toggle="tooltip"
-              data-original-title="Italics and Bold"
+              data-original-title="이탤릭체와 볼드체 (Italics and Bold)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/2"
+              href="/kr/lesson/2"
               data-toggle="tooltip"
-              data-original-title="Headers"
+              data-original-title="헤더 (Headers)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/3"
+              href="/kr/lesson/3"
               data-toggle="tooltip"
-              data-original-title="Links"
+              data-original-title="링크 (Links)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle"
+              href="/kr/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="이미지 (Images)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/4"
+              href="/kr/lesson/5"
               data-toggle="tooltip"
-              data-original-title="Images"
+              data-original-title="인용문 (Blockquotes)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/5"
+              href="/kr/lesson/6"
               data-toggle="tooltip"
-              data-original-title="Blockquotes"
+              data-original-title="리스트 (Lists)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/6"
+              href="/kr/lesson/7"
               data-toggle="tooltip"
-              data-original-title="Lists"
+              data-original-title="단락 (Paragraphs)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/7"
+              href="/kr/conclusion"
               data-toggle="tooltip"
-              data-original-title="Paragraphs"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/conclusion"
-              data-toggle="tooltip"
-              data-original-title="Conclusion"
+              data-original-title="마무리 (Conclusion)"
             ></a>
           </li>
         </ul>
@@ -161,35 +162,56 @@
         instead.
       </div>
       <div class="row">
-        <h1 class="title"></h1>
+        <h1 class="title">이미지(Images)</h1>
       </div>
 
-      <p>Markdown is a way to write content for the web. It’s written in what
-people like to call “plaintext”, which is exactly the sort of text
-you’re used to writing and seeing. Plaintext is just the regular
-alphabet, with a few familiar symbols, like asterisks (
-<code>*</code> ) and backticks ( <code>`</code> ).</p>
+      <div class="row">
+<p>여러분이 마크다운에서 링크를 사용할 줄 안다면, 이미지도 사용할 수 있습니다. 
+  두 문법이 거의 동일합니다.</p>
 
-<p>Unlike cumbersome word processing applications, text written in
-Markdown can be easily shared between computers, mobile phones, and
-people. It’s quickly becoming the writing standard for
-<a href="http://chronicle.com/blogs/profhacker/markdown-the-syntax-you-probably-already-know/35295">academics</a>, <a href="http://blogs.plos.org/mfenner/2012/12/13/a-call-for-scholarly-markdown/">scientists</a>, <a href="http://lifehacker.com/5943320/what-is-markdown-and-why-is-it-better-for-my-to+do-lists-and-notes">writers</a>,
-and many more.  Websites like <a href="https://www.github.com">GitHub</a> and
-<a href="http://www.reddit.com">reddit</a> use Markdown to style their comments.</p>
+<p>이미지 또한 두 가지 타입이 존재합니다. 링크처럼 두 타입 모두 렌더링 되는 방식은 같습니다. 
+  링크와 이미지의 차이는 이미지는 앞에 느낌표를 사용합니다. ( <code>!</code> ).</p>
 
-<p>Formatting text in Markdown has a very gentle learning curve. It doesn’t do anything
-fancy like change the font size, color, or type. All you have control over is
-the display of the text—stuff like making things bold, creating
-headers, and organizing lists.</p>
+<p>첫번째 이미지 타입은 <em>인라인 이미지 링크</em>라 부릅니다. 
+  인라인 이미지 링크를 사용하기 위해 느낌표를 입력하고 ( <code>!</code> ), 
+  대괄호로 ( <code>[ ]</code> ) 대체 텍스트(Alt Text)를 감싼 다음,
+  소괄호로 ( <code>( )</code> ) 링크를 감싸면 됩니다. 
+  (대체 텍스트는 시각 장애인들을 위한 문단 혹은 문장입니다.)</p>
 
-<p>If you have ten minutes, you can learn Markdown!</p>
+<p>예를 들어, https://octodex.github.com/images/bannekat.png에 대한 이미지 링크와 Benjamin Bannekat란 대체 텍스트를 생성하려 할 때,
+  여러분은 마크다운에서 이렇게 사용하시면 됩니다: <code>![Benjamin Bannekat](https://octodex.github.com/images/bannekat.png)</code>.</p>
 
-<p>In each lesson, you’ll be given an introduction to a single Markdown
-concept. Then, you’ll be asked to complete several exercises with that
-new knowledge.</p>
+<p>아래 입력 창에서, 이미지 링크로 바꾼 후, 대체 텍스트를 "A pretty tiger"로 바꿔보세요:</p>
+  <div class="col-md-5 scratchpad"></div>
+  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"></span>
+  <div class="col-md-5 renderpad"></div>
+</div>
+<button class="btn btn-default btn-skip">Skip</button>
 
-<p><a class="btn btn-lg btn-success" href="/lesson/1">Ready? Let’s get started!</a></p>
+<div class="toBeRevealed">
+  <div class="row">
+  <hr>
+  <p>훌륭합니다!</p>
+  <p>비록 여러분이 대체 텍스트를 <em>필요</em> 로 하지 않아도, 시각 장애가 있거나, 스크린 리더를 사용하거나, 
+    고속 인터넷 연결이 없는 사람들을 포함하여 여러분의 청중들이 여러분의 컨텐츠에 접근할 수 있게 할 것입니다.</p>
+  <p>문장 앞에 느낌표를 사용 후 대체 텍스트에 대괄호를 사용하고 이미지 태그에 대괄호를 사용하면 됩니다, 
+    이렇게요: <code>![The founding father][Father]</code>
+    마크다운 페이지 맨 하단에 이미지 태그를 정의하면 됩니다, 
+    이렇게요: <code>[Father]: http://octodex.github.com/images/founding-father.jpg</code>.</p>
+  <p>아래 입력 창에서, 우리는 참조 이미지를 사용하고자 합니다. 지난 강의처럼 이것을 해결해야 다음 강의로 넘어가는 것 아시죠? 
+    "Black"이란 이미지 태그로 <code>https://upload.wikimedia.org/wikipedia/commons/a/a3/81_INF_DIV_SSI.jpg</code> 이미지 링크를 만들어주세요. 
+    두번째 이미지 링크는 <code>http://icons.iconarchive.com/icons/google/noto-emoji-animals-nature/256/22221-cat-icon.png</code> 이미지 링크로 만들어주세요.
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">Skip</button>
+</div>
 
+<div class="toBeRevealed">
+  <hr>
+  <p>와우! 여러분은 마크다운에서 이미지를 사용하는 방법을 모두 배웠습니다!</p>
+  <a class="btn btn-lg btn-success" href="/kr/lesson/5">다음 강의로!</a>
+</div>
 
 
       <hr />
@@ -208,5 +230,7 @@ new knowledge.</p>
     </script>
 
     <script type="text/javascript" src="https://www.markdowntutorial.com/assets/main-27a2c02175dd9e3cc55614769dbb45616e2e6f623b55e3e1195b7d2dbc99ec61.js"></script> 
+    <script src="/kr/lesson_plans.js"></script>
+    
   </body>
 </html>

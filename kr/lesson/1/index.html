@@ -5,7 +5,7 @@
     <!-- TODO: Don't hard code the conclusion as page 8 -->
     <title>
       Markdown Tutorial | Lesson
-      5
+      1
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
@@ -79,66 +79,66 @@
         <ul id="progress-bar" class="nav navbar-nav navbar-right">
           <li>
             <a
-              class="lesson icon-circle-blank"
-              href="/lesson/1"
-              data-toggle="tooltip"
-              data-original-title="Italics and Bold"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/2"
-              data-toggle="tooltip"
-              data-original-title="Headers"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/3"
-              data-toggle="tooltip"
-              data-original-title="Links"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/lesson/4"
-              data-toggle="tooltip"
-              data-original-title="Images"
-            ></a>
-          </li>
-          <li>
-            <a
               class="lesson icon-circle"
-              href="/lesson/5"
+              href="/kr/lesson/1"
               data-toggle="tooltip"
-              data-original-title="Blockquotes"
+              data-original-title="이탤릭체와 볼드체 (Italics and Bold)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/6"
+              href="/kr/lesson/2"
               data-toggle="tooltip"
-              data-original-title="Lists"
+              data-original-title="헤더 (Headers)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/lesson/7"
+              href="/kr/lesson/3"
               data-toggle="tooltip"
-              data-original-title="Paragraphs"
+              data-original-title="링크 (Links)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/conclusion"
+              href="/kr/lesson/4"
               data-toggle="tooltip"
-              data-original-title="Conclusion"
+              data-original-title="이미지 (Images)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="인용문 (Blockquotes)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="리스트 (Lists)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/lesson/7"
+              data-toggle="tooltip"
+              data-original-title="단락 (Paragraphs)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/kr/conclusion"
+              data-toggle="tooltip"
+              data-original-title="마무리 (Conclusion)"
             ></a>
           </li>
         </ul>
@@ -162,81 +162,102 @@
         instead.
       </div>
       <div class="row">
-        <h1 class="title">Blockquotes</h1>
+        <h1 class="title">이탤릭체와 볼드체 (Italics and Bold)</h1>
       </div>
 
       <div class="row">
-<p>If you need to call special attention to a quote from another source, or design
-  a pull quote for a magazine article, then Markdown's <em>blockquote</em> syntax
-  will be useful. A blockquote is a sentence or paragraph that's been specially
-  formatted to draw attention to the reader. For example:</p>
-  <blockquote><p>
-  "The sin of doing nothing is the
-  deadliest of all the seven sins. It has been said that for evil men to accomplish
-  their purpose it is only necessary that good men should do nothing."
-</p></blockquote>
+  <p>
+    텍스트 형식에 대한 두 가지 기본 요소인 <em>이탤릭체</em> 와
+    <strong>볼드체</strong>에 대해 알아보겠습니다. 이번 강의에서 여러분은
+    <code>이렇게 꾸며진 빨간색 글자</code>에 주목해주세요. 이 꾸며진 글자는
+    실제로 마크다운으로 쓰여진 것입니다. 마크다운은 일반 텍스트와 보이는 것이
+    크게 다르지 않지만, 좀 더 쉽게 볼 수 있도록 강조(highlighting)를 제공하고
+    있습니다.
+  </p>
 
-<p>To create a block quote, all you have to do is preface a line with the "greater than"
-caret (<code>></code>). For example:
-<pre>
-> "In a few moments he was barefoot, his stockings folded in his pockets and his
-  canvas shoes dangling by their knotted laces over his shoulders and, picking a
-  pointed salt-eaten stick out of the jetsam among the rocks, he clambered down
-  the slope of the breakwater."
-</pre>
-</p>
+  <p>
+    마크다운으로 <em>이탤릭체</em> 를 사용하기 위해서 여러분은 글자의 바깥쪽에
+    밑줄(<code>_</code>)을 추가하면 됩니다. 예를 들어, <code>_이것_</code>은
+    <em>이탤릭체</em> 가 됩니다.
+  </p>
 
-<p>In the box below, turn the book quotation into a blockquote:</p>
+  <p>
+    다음 강의로 넘어가기 위해서, 아래 "not"란 단어를 이탤릭체로 만들어보세요.
+  </p>
+
   <div class="col-md-5 scratchpad"></div>
-  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"></span>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"
+  ></span>
   <div class="col-md-5 renderpad"></div>
 </div>
-<button class="btn btn-default btn-skip">Skip</button>
+<button class="btn btn-default btn-skip">건너뜀</button>
 
 <div class="toBeRevealed">
   <div class="row">
-  <hr>
-  <p>Marvelous!</p>
-  <p>You can also place a caret character on each line of the quote. This is particularly
-  useful if your quote spans multiple paragraphs. For example:</p>
-  <pre>
-> His words seemed to have struck some deep chord in his own nature. Had he spoken
-of himself, of himself as he was or wished to be? Stephen watched his face for some
-moments in silence. A cold sadness was there. He had spoken of himself, of his own
-loneliness which he feared.
->
-> —Of whom are you speaking? Stephen asked at length.
->
-> Cranly did not answer.</pre>
-  <p>Notice that even blank lines must contain the caret character. This ensures
-    that the entire blockquote is grouped together.</p>
-
-  <p>In the box below, Make the entire quotation a block quote by inserting a caret
-    on each line.</p>
+    <hr />
+    <p>대단합니다! 훌륭합니다!</p>
+    <p>
+      비슷하게, 마크다운에서 <strong>볼드체</strong>를 사용하기 위해서, 여러분은
+      글자의 바깥쪽에 별표( <code>**</code> )를 추가하면 됩니다.
+      <code>**정말**</code> 이런식으로요.
+    </p>
+    <p>아래 입력 창에서, "will"란 단어에 볼드체를 입혀보세요.</p>
     <div class="col-md-5 scratchpad"></div>
     <div class="col-md-5 renderpad"></div>
   </div>
-  <button class="btn btn-default btn-skip">Skip</button>
+  <button class="btn btn-default btn-skip">건너뜀</button>
 </div>
 
 <div class="toBeRevealed">
   <div class="row">
-  <hr>
-  <p>Tremendous!</p>
-  <p>Block quotes can contain other Markdown elements, such as italics, images,
-  or links.</p>
-  <p>In the box below, make the French text italic (not including the exclamation point).
-  Also, turn the entire quote into a blockquote.</p>
+    <hr />
+    <p>정말 잘했습니다!</p>
+    <p>
+      물론 여러분은 한 줄(line)에 <code>_이탤릭체와 볼드체_</code>를 사용할 수
+      있습니다. 다음과 같이 범위를 넓혀서 사용할 수 있구요.
+      <code>**여러 단어들이 가능하다!**</code>.
+    </p>
+    <p>
+      아래 입력 창에서, "Of course"를 이탤릭체로, "a little moxie"를 볼드체로
+      만들어보세요.
+    </p>
     <div class="col-md-5 scratchpad"></div>
     <div class="col-md-5 renderpad"></div>
   </div>
-  <button class="btn btn-default btn-skip">Skip</button>
+  <button class="btn btn-default btn-skip">건너뜀</button>
 </div>
 
 <div class="toBeRevealed">
-  <hr>
-  <p>Ta da! You've learned all there is to creating blockquotes in Markdown!</p>
-  <a class="btn btn-lg btn-success" href="/lesson/6">On to the next lesson!</a>
+  <div class="row">
+    <hr />
+    <p>엄청나군요!</p>
+    <p>
+      이번 강의의 마지막 연습문제로 우리는 <strong>볼드체</strong>와
+      <em>이탤릭체</em> 를 <em><strong>모두</strong></em> 적용한 단어를 만들 것
+      입니다.
+    </p>
+    <p>
+      일반적으로 별표와 밑줄을 어느 순서로 배열하든지 상관없습니다. 아래 입력
+      창에서, "This is unbelievable"란 문장을 볼드체와 이탤릭체로 만들어보세요.
+      별표를 <code>**_바깥쪽에_**</code> 배치하여 좀 더 읽기 쉽게 만들어주세요.
+    </p>
+    <div class="col-md-5 scratchpad"></div>
+    <div class="col-md-5 renderpad"></div>
+  </div>
+  <button class="btn btn-default btn-skip">건너뜀</button>
+</div>
+
+<div class="toBeRevealed">
+  <hr />
+  <p>여러분은 이제 마크다운으로 볼드체와 이탤릭체을 사용할 수 있습니다!</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="/kr/lesson/2"
+    >다음 강의로!</a
+  >
 </div>
 
 
@@ -256,5 +277,7 @@ loneliness which he feared.
     </script>
 
     <script type="text/javascript" src="https://www.markdowntutorial.com/assets/main-27a2c02175dd9e3cc55614769dbb45616e2e6f623b55e3e1195b7d2dbc99ec61.js"></script> 
+    <script src="/kr/lesson_plans.js"></script>
+    
   </body>
 </html>
