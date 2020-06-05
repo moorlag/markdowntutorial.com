@@ -5,7 +5,7 @@
     <!-- TODO: Don't hard code the conclusion as page 8 -->
     <title>
       Markdown Tutorial | Lesson
-      3
+      7
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
@@ -90,65 +90,65 @@
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/fr/lesson/1"
+              href="/jp/lesson/1"
               data-toggle="tooltip"
-              data-original-title="Italiques et Gras"
+              data-original-title="イタリックと太字 (Italics and Bold)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/fr/lesson/2"
+              href="/jp/lesson/2"
               data-toggle="tooltip"
-              data-original-title="Titres"
+              data-original-title="見出し (Headers)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/3"
+              data-toggle="tooltip"
+              data-original-title="リンク (Links)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/4"
+              data-toggle="tooltip"
+              data-original-title="画像 (Images)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/5"
+              data-toggle="tooltip"
+              data-original-title="引用 (Blockquotes)"
+            ></a>
+          </li>
+          <li>
+            <a
+              class="lesson icon-circle-blank"
+              href="/jp/lesson/6"
+              data-toggle="tooltip"
+              data-original-title="リスト (Lists)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle"
-              href="/fr/lesson/3"
+              href="/jp/lesson/7"
               data-toggle="tooltip"
-              data-original-title="Liens"
+              data-original-title="段落 (Paragraphs)"
             ></a>
           </li>
           <li>
             <a
               class="lesson icon-circle-blank"
-              href="/fr/lesson/4"
+              href="/jp/conclusion"
               data-toggle="tooltip"
-              data-original-title="Images"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/fr/lesson/5"
-              data-toggle="tooltip"
-              data-original-title="Citations"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/fr/lesson/6"
-              data-toggle="tooltip"
-              data-original-title="Listes"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/fr/lesson/7"
-              data-toggle="tooltip"
-              data-original-title="Paragraphes"
-            ></a>
-          </li>
-          <li>
-            <a
-              class="lesson icon-circle-blank"
-              href="/fr/conclusion"
-              data-toggle="tooltip"
-              data-original-title="Conclusion"
+              data-original-title="結論"
             ></a>
           </li>
         </ul>
@@ -172,87 +172,99 @@
         instead.
       </div>
       <div class="row">
-        <h1 class="title">Liens</h1>
+        <h1 class="title">段落（Paragraphs）</h1>
       </div>
 
       <div class="row">
-<p>Nous allons maintenant apprendre comment créer des liens vers d'autres sites Web sur le Web.</p>
+  <p>段落を作るにはいくつか方法があります。</p>
 
-<p>Il y a deux types de liens différents dans Markdown, mais les deux ont exactement un rendu identique. Le premier style de lien s'appelle un lien <em>in line (ou dans la ligne) </em>. Pour créer un fichier en ligne
-  vous encadrez le texte du lien entre crochets ( <code>[ ]</code> ), puis vous encadrez le lien
-  entre parenthèses ( <code>( )</code> ). Par exemple, pour créer un lien hypertexte vers www.github.com, avec un texte de lien
-  qui dit : "Visitez GitHub !", vous écrirez ça en Markdown : <code>[Visitez GitHub !](www.github.com)</code>.</p>
+  <p>
+    詩を例として使いましょう。
+    次のような文章を書くと想定してください。
+  </p>
+  <p>
+    私は自分自身に矛盾しているだろうか？<br />
+    それもいいでしょう、私は自分自身に矛盾している。<br />
+    （私は大きく、様々な自分があるのだ）
+  </p>
+  <p>
+    次のようにそれぞれの詩を独立した行で書けばいいように思うかもしれません
+  </p>
+  <pre>
+私は自分自身に矛盾しているだろうか？
+それもいいでしょう、私は自分自身に矛盾している。
+（私は大きく、様々な自分があるのだ）
+</pre
+  >
+  <p>
+    残念なことに、これは違います！これでは次のようにすべて一行に表示されてしまいます。:　
+    私は自分自身に矛盾しているだろうか？それもいいでしょう、私は自分自身に矛盾している。
+    （私は大きく、様々な自分があるのだ）
+  </p>
+  <p>
+    新しい行を入れてしまうと、文の一体感がなくなってしまいます。
+  </p>
+  <pre>
+私は自分自身に矛盾しているだろうか？
 
-<p>Dans l'encadré ci-dessous, faites un lien vers www.qwant.com, avec le texte du lien qui dit "Cherchez-le".</p>
+それもいいでしょう、私は自分自身に矛盾している。
+
+（私は大きく、様々な自分があるのだ）
+</pre
+  >
+  <p>
+    このようなやり方は<em>ハードブレーク</em>と呼ばれますが、今回の詩でやりたいのは
+    <em>ソフトブレーク</em>と呼ばれるものです。各行の<em>最後</em>に半角スペースを2つ入れます。
+    スペースは見ることができませんが、おおよそ次のようなイメージです。
+  </p>
+  <pre>
+私は自分自身に矛盾しているだろうか？··
+それもいいでしょう、私は自分自身に矛盾している。··
+（私は大きく、様々な自分があるのだ）
+</pre
+  >
+  <p>ドット（　<code>·</code>　）が半角スペースを表しています。</p>
+
+  <p>
+    実際にやってみましょう。この問題では、詩が正しく表示されるように各行に半角スペースを追加してください。
+  </p>
+
   <div class="col-md-5 scratchpad"></div>
-  <span class="help-tooltip icon-question" data-toggle="tooltip" data-original-title="Tapez vos réponses dans la case de gauche, et le Markdown formaté apparaît dans la case de droite. Dès votre réponse est correcte, vous serez guidé à la prochaine leçon"></span>
+  <span
+    class="help-tooltip icon-question"
+    data-toggle="tooltip"
+    data-original-title="Type your answers in the left box, and the resulting Markdown appears in the right box. When your answer is correct, you'll be taken to the next lesson"
+  ></span>
   <div class="col-md-5 renderpad"></div>
 </div>
-<button class="btn btn-default btn-skip">Passer</button>
+<button class="btn btn-default btn-skip">スキップ</button>
 
 <div class="toBeRevealed">
   <div class="row">
-  <hr>
-  <p>Bon Travail !</p>
-  <p>Vous pouvez ajouter de l'emphase aux textes des liens, si vous le souhaitez. Dans l'encadré ci-dessous, faites de la balise
-  phrase "vraiment, vraiment" en gras, et avoir l'ensemble de la phrase lien vers www.dailykitten.com.
-  Vous devez vous assurer que la formulation en gras se trouve entre les parenthèses du texte du lien.</p>
+    <hr />
+    <p>素晴らしい出来です！</p>
+    <p>
+      このソフトブレークは詩を整形する以外にも、リスト内の段落を整形するのにも使われます。
+      前のレッスンではそれぞれの段落を表示するために空行を入れていました。
+    </p>
+    <p>
+      この問題では、ハードブレークをソフトブレークに置き換え、
+      各項目の説明をより密着させるようにしてください。
+    </p>
     <div class="col-md-5 scratchpad"></div>
     <div class="col-md-5 renderpad"></div>
   </div>
-  <button class="btn btn-default btn-skip">Passer</button>
+  <button class="btn btn-default btn-skip">スキップ</button>
 </div>
 
 <div class="toBeRevealed">
-  <div class="row">
-  <hr>
-  <p>Fantastique !</p>
-  <p>Bien que cela puisse rendre l'expérience difficile, vous pouvez aussi créer des liens à l'intérieur de
-  les titres.</p>
-  <p>Pour ce prochain tutoriel, faites du texte un titre de niveau quatre, et tournez la phrase
-  "la BBC" en un lien vers www.bbc.com/news :</p>
-    <div class="col-md-5 scratchpad"></div>
-    <div class="col-md-5 renderpad"></div>
-  </div>
-  <button class="btn btn-default btn-skip">Passer</button>
-</div>
-
-<div class="toBeRevealed">
-  <div class="row">
-  <hr>
-  <p>C'est tout ce qu'il y a à écrire pour les liens en ligne.</p>
-  <p>L'autre type de lien s'appelle un lien <em>reference</em>. Comme son nom l'indique,
-    le lien est en fait une référence à un autre endroit dans les documents. Voici un exemple de ce que
-    nous voulons dire :</p>
-  <pre>
-    Voici [un lien vers autre chose][un autre endroit].
-    Voici [encore autre lien][un autre lien].
-    Et maintenant, revenons au [premier lien][un autre endroit].
-
-    [un autre endroit] : www.github.com
-    [autre lien] : www.google.com
-  </pre>
-  <p>Les "références" ci-dessus constituent le deuxième ensemble de crochets : <code>[autre endroit]</code> et
-    <code>[autre-lien]</code>. Au bas d'un document de démarque, ces parenthèses sont définies comme suit
-    en tant que liens appropriés vers des sites Web externes. Un avantage du style de lien de référence
-    est que plusieurs liens vers le même endroit n'ont besoin d'être mis à jour qu'une seule fois. Pour
-    exemple, si nous décidons de faire en sorte que tous les liens <code>[autre endroit]</code> aillent quelque part
-    sinon, nous n'avons qu'à changer le lien de référence unique.</p>
-  <p>Les liens de référence n'apparaissent pas dans le rendu Markdown. Vous les définissez en fournissant
-    le même nom de balise entre parenthèses, suivi d'un deux-points, suivi du lien.</p>
-  <p>Dans l'encadré ci-dessous, nous avons commencé à écrire quelques liens de référence. Vous voyez, ils
-    ont besoin d'être finit ! Appeler la première balise de référence "un endroit amusant", et faire
-    le lien vers www.zombo.com ; faire le second lien vers www.stumbleupon.com.</p>
-    <div class="col-md-5 scratchpad"></div>
-    <div class="col-md-5 renderpad"></div>
-  </div>
-  <button class="btn btn-default btn-skip">Passer</button>
-</div>
-
-<div class="toBeRevealed">
-  <hr>
-  <p>Vous savez maintenant comment faire des liens avec le Markodwn !</p>
-  <a class="btn btn-lg btn-success" href="/fr/lesson/4">A la prochaine leçon !</a>
+  <hr />
+  <p>できましたか？これでソフトブレークの使い方はマスターしましたね！</p>
+  <a
+    class="btn btn-lg btn-success"
+    href="/jp/conclusion"
+    >さぁ、次のレッスンにいきましょう！</a
+  >
 </div>
 
 
@@ -272,7 +284,7 @@
     </script>
 
     <script type="text/javascript" src="https://www.markdowntutorial.com/assets/main-27a2c02175dd9e3cc55614769dbb45616e2e6f623b55e3e1195b7d2dbc99ec61.js"></script> 
-    <script src="/fr/lesson_plans.js"></script>
+    <script src="/jp/lesson_plans.js"></script>
     
   </body>
 </html>
